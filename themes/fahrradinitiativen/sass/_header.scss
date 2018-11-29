@@ -1,0 +1,171 @@
+#branding {
+    @include border-radius(0);
+    position: relative;
+    border: 0;
+    margin-bottom: 0;
+    padding: 20px 30px;
+    min-height: 160px;
+    background: $blue;
+    .navbar-brand {
+        font-size: 30px;
+        color: #fff;
+        position: absolute;
+        padding: 0;
+        left: 30px;
+        bottom: 18px;
+        height: auto;
+        line-height: 1;
+    }
+    #block-changingcities {
+        float: right;
+        p {
+            margin: 0;
+        }
+        img {
+            max-width: 335px;
+        }
+        @media only screen and (max-width: 767px) {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            img {
+                max-width: 300px;
+                margin: 1em 0 1em -150px;
+            }
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        min-height: 120px;
+        background: $blue;
+        background-size: 260px;
+        padding-bottom: 60px;
+        .navbar-brand {
+            left: 0;
+            width: 100%;
+            text-align: center;
+            bottom: 50px;
+        }
+    }
+}
+
+#navbar {
+    z-index: 1001;
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+    @include border-radius(0);
+    margin-bottom: 25px;
+    background: $background;
+    .navbar-wrapper {
+        border-bottom: 8px solid $blue;
+    }
+    .navbar-collapse {
+        border: 0;
+    }
+    ul.menu {
+        float: none;
+        li {
+            margin-right: 40px;
+            a {
+                font-size: 20px;
+                font-weight: 600;
+                background: transparent;
+                bottom: -8px;
+                padding-top: 10px;
+                position: relative;
+                color: $blue;
+                border-bottom: 8px solid transparent;
+                &.is-active {
+                    border-bottom-color: $background;
+                }
+                &:hover {
+                    border-bottom-color: rgba(255,255,255,.6);
+                }
+            }
+            @media only screen and (min-width: 768px) {
+                &:last-child {
+                    float: right;
+                }
+                &:nth-child(3) {
+                    float: right;
+                    margin-right: 0;
+                }
+            }
+            .dropdown-menu {
+                max-width: 170px;
+                border: 0;
+                @include border-radius(0);
+                -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+                box-shadow: 0 0 0 0 rgba(0,0,0,0);
+                @media only screen and (max-width: 767px) {
+                    max-width: 100%;
+                    width: 100%;
+                }
+                li {
+                    margin: 0;
+                    float: none;
+                    a {
+                        font-size: 13px;
+                        bottom: auto;
+                        border: 0;
+                        padding: 8px 20px;
+                        white-space: normal;
+                        &:hover {
+                            opacity: .7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        min-height: 1px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        .navbar-toggle {
+            @include transition(all .3s ease-in-out);
+            float: none;
+            display: block;
+            margin: 0 auto;
+            border: 0;
+            background: transparent;
+            .icon-bar {
+                @include transition(all .3s ease-in-out);
+                background-color: $blue;
+                width: 24px;
+                height: 4px;
+            }
+            &:hover, &:active {
+                .icon-bar {
+                    background-color: $turquoise;
+                }
+            }
+        }
+        ul.menu {
+            float: none;
+            li {
+                margin-right: 0;
+                a {
+                    border: 0;
+                    text-align: center;
+                    bottom: 0;
+                    &.is-active {
+                        color: $turquoise;
+                    }
+                    &:hover {
+                        color: $turquoise;
+                    }
+                }
+                &:last-child {
+                    float: none;
+                }
+            }
+        }
+    }
+}
+
+.stuck {
+    position:fixed;
+    top: 0;
+    
+}

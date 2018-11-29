@@ -1,0 +1,23 @@
+uuid: 7f46434e-3085-4123-9f0f-ce3183ca46db
+langcode: de
+status: true
+dependencies:
+  config:
+    - block_content.type.webform
+    - field.field.block_content.webform.body
+  module:
+    - text
+id: block_content.webform.default
+targetEntityType: block_content
+bundle: webform
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

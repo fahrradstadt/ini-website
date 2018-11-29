@@ -1,0 +1,9 @@
+uuid: b9008a82-3ab7-4c08-97f7-075a2c5bf830
+langcode: de
+status: true
+dependencies: {  }
+id: de
+label: German
+direction: ltr
+weight: 0
+locked: false

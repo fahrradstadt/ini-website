@@ -1,0 +1,10 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+global-scripts:
+  js:
+    js/bigSlide.js: {}
+    js/waypoints/lib/jquery.waypoints.js: {}
+    js/waypoints/lib/shortcuts/sticky.js: {}
+    js/scripts.js: {}
